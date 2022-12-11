@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rebeccapurple;
+            }
+            header{
+                background-color: brown;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .left {
+                align-items: left;
+            }
+            .center {
+                width: auto;
+                align-items: center;
+            }
+            .right {
+                align-items: right;
+            }
+            @media (max-width: 1000px) {
+                header {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+        </style>
+    </head>
+    <header>
+        <div class="left">CoolLogo</div>
+        <div class="center">
+            <ul>
+                <li><a href="#">Our products</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+
+        </div>
+        <div class="right"><button>Buy now</button></div>
+    </header>
+</html>

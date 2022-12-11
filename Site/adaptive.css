@@ -1,0 +1,96 @@
+@media only screen and (min-width: 1200px ) {
+    input[type="search"]  {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 880px) {
+    select {
+        width: 120px;
+    }
+    .item {
+        width: 20%;
+    }
+}
+@media only screen and (max-width: 830px) {
+    header {
+        height: auto;
+    }
+    nav {
+        height: auto;
+    }
+    nav ul {
+        width: 100%;
+        display:block;
+        height: 100%;
+    }
+    nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    nav li a {
+        border-bottom: 1px solid black;
+
+    }
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
+    #mult {
+        border-left: 1px solid black;
+
+    }
+
+    header input {
+        display: none;
+        height: auto;
+        visibility: hidden;
+    }
+    header button {
+        display: none;
+        height: auto;
+        visibility: hidden;
+    }
+    #search {
+        float: right;
+        display: block;
+        border-bottom: none;
+        border-left: 1px solid black;
+    }
+    #entrance {
+        float: right;
+        display: block;
+        border-bottom: none;
+    }
+    .form-conteiner {
+        width: 0;
+    }
+    select {
+        width: 80px;
+    }
+
+}
+@media only screen and (max-width: 650px) {
+    .logo {
+        display: none;
+        height: auto;
+        visibility: hidden;
+    }
+    .filter {
+        justify-content: center;
+    }
+    .filter-box {
+        display: none;
+        height: auto;
+        visibility: hidden;
+    }
+    .item {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .item {
+        width: 50%;
+    }
+}

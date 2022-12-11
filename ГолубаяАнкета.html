@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <style>
+            body {
+                background-color: royalblue;
+            }
+            form {
+                background-color: royalblue;
+                color: white;
+                width: 50%;
+            }
+            label {
+                display: table-cell;
+                text-align: right;
+            } 
+            input {
+                display: table-cell;
+                margin-top: 15px;
+                margin-left: 4px;
+            }
+            select {
+                display: table-cell;
+                margin-left: 4px;
+                margin-right: 4px;
+                margin-top: 15px;
+            }
+            .big
+            {
+                width: 50%;
+            }
+            .little {
+                width: 15%;
+                margin-bottom: 0px;
+            }
+            p {
+                display: table-row;
+            }
+            fieldset {
+                border-color: white;
+                border-radius: 3px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form>
+            <br/>
+            <fieldset>
+                <legend>Registration Details</legend>
+                <p>
+                    <label>University:</label>
+                    <input type="text" name="University"/>
+                </p>
+                <p>
+                    <label>Institute:</label>
+                    <input type="text" name=""/>
+                </p>
+                <p>
+                    <label>Branch:</label>
+                    <select class="big">
+                        <option value="--select--">--select--</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Degree:</label>
+                    <select>
+                        <option value="--select--">--select--</option>
+                    </select>
+                    <input type="radio" name="degree" value="Pursuing"/>Pursuing
+                    <input type="radio" name="degree" value="Completed"/>Completed
+                </p>
+                <p>
+                    <label>Avarage CPI:</label>
+                    <select class="little" multiple size="1" name="CPIupto"></select>Upto
+                    <select class="little" multiple size="1" name="CPIsemester"></select>Th Semester
+                </p>
+                <p>
+                    <label>Experiense:</label>
+                    <select name="experienseYears">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>Years
+                </p>
+                <p>
+                    <label>Your Wedsite Or Blog:</label>
+                    <input type="text" name="cite" value="http://"/>
+                </p>
+                <br/>
+            </fieldset>
+            <br/>
+        </form>
+    </body>
+</html>

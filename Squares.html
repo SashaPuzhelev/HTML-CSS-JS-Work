@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Squares</title>
+        <style>
+            body {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:start;
+            }
+            div {
+                margin: 5px;
+                display: flex;
+                float: left;
+                font-size: smaller;
+                text-indent: 3px;
+            }
+            .block1 {
+                background-color: aqua;
+                width: 100px;
+                height: 100px;
+            }
+            .block2 {
+                background-color: aquamarine;
+                width: 75px;
+                height: 75px;
+            }
+            .block3 {
+                background-color: fuchsia;
+                width: 50px;
+                height: 50px;
+            }
+            .changeBlock {
+                position: relative;
+                top: -50px;
+            }
+            form {
+                background-color: blanchedalmond;
+                width: 100%;
+                margin-top: 10px;
+                height: 110px;
+            }
+            .right {
+                display:flex;
+                justify-content:flex-end;
+                
+            }
+            .center {
+                display:flex;
+                justify-content: center;
+            }
+            .little {
+                overflow: hidden;
+                display:flex;
+
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="block3">Block 3</div>
+            <div class="block2">Block 2</div>
+            <div class="block1">Block 1</div>
+        </form>
+        <form class="right">
+            <div class="block1">Block 1</div>
+            <div class="block2">Block 2</div>
+            <div class="block3">Block 3</div>
+        </form>
+        <form class="little">
+           <div class="changeBlock">
+                <div class="block1">Block 1</div>
+                <div class="block2">Block 2</div>
+                <div class="block3">Block 3</div>
+           </div> 
+        </form>
+        <form class="right">
+            <div class="block3">Block 3</div>
+            <div class="block2">Block 2</div>
+            <div class="block1">Block 1</div>
+        </form>
+        <form class="center">
+            <div class="block3">Block 3</div>
+            <div class="block2">Block 2</div>
+            <div class="block1">Block 1</div>
+        </form>
+    </body>
+</html>

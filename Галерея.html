@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Галерея-аккордеон</title>
+        <style>
+            .flex {
+                display: flex;
+                height: 450px;
+            }
+            .item {
+                object-fit: cover;
+                flex: 30%;
+                -wbkit-transition: flex 1s ease;
+                transition: flex 1s ease;
+            }
+            .item:hover {
+                background-size: 100% 100%;
+                flex: 100%;
+            }
+            .img1 {
+                background: url('Images/1.jpg');
+            }
+            .img2 {
+                background: url('Images/2.jpg');
+            }
+            .img3 {
+                background: url('Images/3.jpg');
+            }
+            .img4 {
+                background: url('Images/4.jpg');
+            }
+            .img5 {
+                background: url('Images/5.jpg');
+            }
+            .img6 {
+                background: url('Images/6.jpg');
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex">
+            <div class="item img1"></div>
+            <div class="item img2"></div>
+            <div class="item img4"></div>
+            <div class="item img5"></div>
+            <div class="item img6"></div>
+            <div class="item img3"></div>
+        </div>
+    </body>
+</html>

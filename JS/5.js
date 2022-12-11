@@ -1,0 +1,15 @@
+document.writeln("" + 1 + 0);
+document.writeln("" - 1 + 0);
+document.writeln(true + false);
+document.writeln(6 / "3");
+document.writeln("2" * "3");
+document.writeln(4 + 5 + "px");
+document.writeln("$" + 4 + 5);
+document.writeln("4" + 2);
+document.writeln("4px" - 2);
+document.writeln(7/0);
+document.writeln(" -9 " + 5);
+document.writeln(" -9 " - 5);
+document.writeln(null + 1);
+document.writeln(undefined + 1);
+document.writeln(" \t \n");

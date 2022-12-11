@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Регистрация</title>
+         <style>
+             body {
+                background-color: pink;
+            }
+            form {
+                width: 600px;
+                background-color: pink;
+            }
+            input {
+                margin-bottom: 4px;
+                margin-left: 4px;
+                display: table-cell;
+            }
+            label {
+                display: table-cell;
+            }
+            textarea {
+                resize: none;
+            }
+            button {
+                width: 100%;
+            }
+            p.table {
+                display: table-row;
+            }
+            p.endInfo {
+                text-align: center;
+            }
+            select.s {
+                width: 260px;
+            }
+         </style>
+    </head>
+    <body>
+    <form>
+        <b>Регистрационная страница электронной библиотеки</b>
+        <br/>
+        <br/>
+        Заполнив анкету, вы сможете пользоваться нашей электронной библиотекой
+        <br/>
+        <br/>
+        <p class="table">
+            <label>Введите регистрационное имя</label>
+            <input type="text" name="usersName"/>
+        </p>
+        <p class="table">
+            <label>Введите пароль</label>
+            <input type="password" name="password"/>
+        </p>
+        <p class="table">
+            <label>Подтвердите пароль</label>
+            <input type="password" name="passwordCheck"/>
+        </p>
+        <br/>
+        Ваш возраст
+        <input type="radio" name="age" value="до 20" checked/>До 20
+        <input type="radio" name="age" value="20-30"/>20-30
+        <input type="radio" name="age" value="30-50"/>30-50
+        <input type="radio" name="age" value="старше 50"/>старше 50
+        <p>
+            На каких языках читаете:
+            <input type="checkbox" name="language" value="русский" checked/>русский
+            <input type="checkbox" name="language" value="английский"/>английский
+            <input type="checkbox" name="language" value="итальянский"/>итальянский
+            <input type="checkbox" name="language" value="французский"/>французский
+        </p>
+        <p>Какой формат данных явлвяется для вас предпочтительным?</p>
+        <select multiple size="2" name="format">
+            <option value="HTML">HTML</option>
+            <option value="Plain text">Plain text</option>
+        </select>
+        <p>Ваши любимые авторы:</p>
+        <select class="s" multiple size="3"  name="favoritAuthor">
+            <option value="Фёдор Михайлович Достоевский">Фёдор Михайлович Достоевский</option>
+            <option value="Александр Сергеевич Пушкин">Александр Сергеевич Пушкин</option>
+        </select>
+        <p>
+            <input type=reset value="Отменить"/>
+            <input type="submit" value="Ок"/>
+        </p>
+        Проверка PHP Лабораторные по базам данных
+        <p>
+            <button>Лабораторные по базам данных</button>
+        </p>
+        <p class="endInfo">
+            Сегодня замечательный день.
+            <br/>
+            Я сделал первую интернет страничку
+        </p>
+        <p class="endInfo">
+            <a href="ГолубаяАнкета.html" target="blank">Я буду богатым и свободным человеком!</a>
+        </p>
+    </form>
+    </body>
+</html>

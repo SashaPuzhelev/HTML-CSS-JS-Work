@@ -1,0 +1,1 @@
+document.body.style.setProperty('--main-color',"#6c0")

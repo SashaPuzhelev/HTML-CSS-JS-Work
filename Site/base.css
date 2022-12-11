@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--base-accented-color);
+}
+div {
+    display: block;
+}
+.container {
+    background-color: var(--base-color);
+    max-width: 1500px;
+    min-width: 400px;
+    margin: 0 auto;
+}
+:root {
+    --base-color: #7109AA;
+    --base-accented-color: #48036F;
+    --additional-color: #FFD300;
+    --additional-accented-color: #A68900;
+    --accented-color: #9FEE00;
+    --accented-dark-color: #679B00;
+    --border-color: black;
+}
+header {
+    background-color: var(--additional-color);
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+nav {
+    width: auto;
+    height: 100%;
+    position: relative;
+}
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+}
+nav li {
+    display: inline;
+    float: left;
+}
+nav li a {
+    padding: 0 5 0 5;
+    color: var(--additional-accented-color);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    border-right: 1px solid var(--border-color);
+    box-sizing: border-box;
+}
+nav li:first-child a {
+    border-left: 1px solid var(--border-color);
+}
+form {
+    display: block;
+}
+button {
+    border: 1px solid var(--border-color);
+}
+button {
+    width: 100px;
+    height: 30px;
+    font-weight: 700;
+    color: var(--additional-color);
+    text-transform: uppercase;
+    background-color:  var(--additional-accented-color);
+}
+.search-box {
+    width: 100%;
+    position: relative;
+}
+.search-box button {
+    display: inline;
+    float: left;
+    background-color: var(--additional-accented-color);
+    border-left: 0;
+    height: 30px;
+    width: 30px;
+}
+header input[type="search"] {
+    display: inline;
+    float: left;
+    background-color: var(--additional-accented-color);
+    height: 30px;
+    border: 1px solid var(--border-color);
+    border-right: 0;
+    color: var(--additional-color);
+}
+header input[type="search"]::placeholder {
+    color: var(--base-accented-color);
+}
+.logo {
+    width: 140px;
+    height: 40px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+nav a:hover, nav a:active {
+    color: var(--additional-color);
+    background-color: var(--additional-accented-color);
+}
+select {
+    width: 140px;
+    margin: 10px;
+    background-color: var(--additional-color);
+    color: var(--additional-accented-color);
+    border: 1px solid var(--border-color);
+}
+
+.filter {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 70px;
+}
+input[type="reset"] {
+    margin: 10px;
+    background-color: var(--additional-color);
+    border: 1px solid var(--border-color);
+    color: var(--additional-accented-color);
+}
+.filter-box input[type="reset"] {
+    width: 20px;
+}
+.label-title {
+    margin: 10px;
+    margin-left: 40px;
+    padding: 5 10 5 10;
+    color: var(--accented-color);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 16pt;
+}
+.filter-box {
+    position: relative;
+    height: 60%;
+}
+.content { 
+    padding: 10;
+}
+.content-item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.content-item a {
+    text-decoration: none;
+    color: var(--accented-color);
+}
+.item {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin: 0 5;
+}
+.poster {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+.poster:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    height: 50%;
+}
+.title-poster {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+}
+#search {
+    display: none;
+}
+#entrance {
+    display: none;
+}
+.form-conteiner {
+    height: auto;
+    width: auto;
+}
+.further {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}

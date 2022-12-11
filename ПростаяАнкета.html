@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Анкета</title>
+        <style>
+        textarea {
+            resize: none;
+        }
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>Имя <input type=text name="name" size=25 maxlength="25"/></p>
+            <p>Фамилия <input type=text name="surname" size=25 maxlength="25"/></p>
+            <p>Отчество <input type=text name="patronymic" size=25 maxlength="25"/></p>
+            <p>E-mail <input type=email name="email"/></p>
+            <p>Выбор страны <select name="country">
+                <option value="Россия">Россия</option>
+                <option value="США">США</option>
+                <option value="Великобритания">Великобритания</option>
+                <option value="Италия">Италия</option>
+                <option value="Украина">Украина</option>
+                <option value="Германия">Германия</option>
+                <option value="Франция">Франция</option>
+                <option value="Мексика">Мексика</option>
+                <option value="Грузия">Грузия</option>
+                <option value="Сирия"></option>
+            </select></p>
+            <p>Выбор города</p>
+            <p><input type=radio name="city" value="Краснодар" checked/>Краснодар
+                <input type=radio name="city" value="Москва"/>Москва
+                <input type=radio name="city" value="Воронеж"/>Воронеж
+                <input type=radio name="city" value="Якутск"/>Якутск
+                <input type=radio name="city" value="Красноярск"/>Красноярск
+            </p>
+            Выбор языка
+            <p><input type="checkbox" name="language" value="Русский язык"/>Русский язык</p>
+            <input type="checkbox" name="language" value="Английский язык"/>Английский язык
+            <p><input type="checkbox" name="language" value="Испанский язык"/>Испанский язык</p>
+            <input type="checkbox" name="language" value="Итальянский язык"/>Итальянский язык
+            <p><input type="checkbox" name="language" value="Французский язык"/>Французский язык</p>
+            <p>Выбор профессии</p>
+            <select multiple size="4" name="profession">
+                <option value="Грузчик">Грузчик</option>
+                <option value="Менеджер">Менеджер</option>
+                <option value="Директор">Директор</option>
+                <option value="Водитель">Водитель</option>
+                <option value="Полицейский">Полицейский</option>
+                <option value="Врач">Врач</option>
+                <option value="Программист">Программист</option>
+                <option value="Администратор">Администратор</option>
+                <option value="WEB-разработчик">WEB-разработчик</option>
+                <option value="Учитель">Учитель</option>
+             </select>
+                <p>Пароль <input type="password" name="usersPassword" sise="20" maxlength="10"/></p>
+                <textarea name="info" rows="5" cols="40" disabled>Вы, нажимая на кнопку "Отправить", 
+                соглашаетесь на обработку персональных данных </textarea>
+            <p>
+            <input type=reset value="Очистить поля формы"/>
+            <input type=submit value="Отправить">
+            </p>
+        </form>
+    </body>
+</html>
